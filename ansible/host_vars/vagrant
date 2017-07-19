@@ -1,11 +1,11 @@
 ---
-repo_url: ssh://git@bitbucket.org/youruser
-repo: yourproject
-home_dir: /home/ubuntu
+repo_url: git@github.com:eriksf/django_ansible
+repo: django_ansible
+home_dir: /home/django
 repo_dir: "{{ home_dir }}/{{ repo }}"
-django_dir: "{{ repo_dir }}/django"
+django_dir: "{{ repo_dir }}/todolist"
 static_dir: "{{ home_dir }}/static"
-django_project: yourproject
+django_project: todolist
 dbname: django
 dbuser: django
 dbpassword: "{{ lookup('password', 'postgresqlpasswd') }}"

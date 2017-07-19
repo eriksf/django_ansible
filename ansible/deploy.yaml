@@ -1,7 +1,7 @@
 ---
 - hosts: all
   become: yes
-  become_user: ubuntu
+  become_user: django
   gather_facts: no
 
   tasks:
@@ -19,7 +19,7 @@
 
 - hosts: all
   become: yes
-  become_user: ubuntu
+  become_user: django
   gather_facts: no
   environment:
     DJANGO_SETTINGS_MODULE: "{{ django_project }}.settings.production"
